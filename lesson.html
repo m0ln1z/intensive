@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для трудоустройства</title>
+</head>
+<body>
+    <header>
+        <h1>Анкета для трудоустройства</h1>
+    </header>
+
+  
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="position">Желаемая должность:</label>
+        <input type="text" id="position" name="position" required>
+        <br><br>
+
+        <label for="file">Резюме (в формате PDF):</label>
+        <input type="file" id="file" name="file" accept=".pdf" required>
+        <br><br>
+
+        
+        <h2>Опыт работы</h2>
+        <table border="1">
+            <tr>
+                <th>Компания</th>
+                <th>Должность</th>
+                <th>Годы работы</th>
+            </tr>
+            <tr>
+                <td>Jusan Bank</td>
+                <td>Fullstack Developer</td>
+                <td>2020-2024</td>
+            </tr>
+            <tr>
+                <td>Freelance</td>
+                <td>Frontend</td>
+                <td>2018-2020</td>
+            </tr>
+        </table>
+        <br><br>
+
+       
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+    </form>
+
+    
+    <footer>
+        <p>© 2024 Компания "Artur TOO"</p>
+    </footer>
+</body>
+</html>
